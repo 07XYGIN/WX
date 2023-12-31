@@ -1,0 +1,91 @@
+<!-- Index -->
+<view class="container">
+  <view class="top">
+    <navigator url="../link/index" class="ipt">
+      <image role="img" mode="" class="icon" />
+      <text class="text">商品搜索, 共239款好物</text>
+    </navigator>
+  </view>
+  <view>
+  </view>
+  <swiper class="swiper" circular autoplay indicator-dots>
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-item">
+          <image src="{{item.image_url}}" mode="" />
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <van-grid column-num="5" id="c">
+    <block wx:for="{{category}}" wx:key="*this">
+      <navigator bind:tap="getid">
+        <van-grid-item icon="{{icon_url}}" text="{{item.name}}" class="text-text" />
+      </navigator>
+    </block>
+  </van-grid>
+  <view class="text-content"><text>品牌制造商直供</text></view>
+  <view class="main">
+    <van-grid column-num="2" border="{{ false }}">
+      <navigator url="../../pages/nosdn/index" wx:for="{{ brandList }}" wx:key="item.id" data-id="{{item.id}}" bind:tap="tap" id='a'>
+        <van-grid-item use-slot id="box">
+          <image src="{{item.new_pic_url}}" class="images" />
+          <text class="text-item">{{item.name}}</text>
+          <text class="text-item-d">{{item.floor_price}}元起</text>
+        </van-grid-item>
+      </navigator>
+    </van-grid>
+  </view>
+  <view class="text-content"><text>周一周四新品首发</text></view>
+  <view class="main">
+    <van-grid column-num="2" border="{{ false }}">
+      <navigator id="van-grid-item__content" wx:for="{{ newGoodsList }}" wx:key="item.id" data-id="{{item.id}}" bindtap="getItemID">
+        <van-grid-item use-slot>
+          <image style="width: 375rpx; height: 253rpx;" src="{{item.list_pic_url}}" />
+          <text class="text-item-s">{{item.name}}</text>
+          <text class="text-item-dd">￥{{item.retail_price}}</text>
+        </van-grid-item>
+      </navigator>
+    </van-grid>
+  </view>
+  <view class="text-content"><text>人气推荐</text></view>
+  <view class="main1">
+    <van-grid column-num="1" border="{{ false }}">
+      <navigator wx:for="{{ hotGoodsList}}" bind:tap="ggg" wx:key="item.id" data-id="{{item.id}}">
+        <van-grid-item use-slot>
+          <image src="{{item.list_pic_url}}" class="image" />
+          <text id="text1">{{item.name}}</text>
+          <text id="text2">{{item.goods_brief}}</text>
+          <text id="text3">￥{{item.retail_price}}</text>
+        </van-grid-item>
+      </navigator>
+    </van-grid>
+  </view>
+  <view class="text-content"><text>专题精选</text></view>
+  <view class="main3">
+    <navigator url="../brandDetail/index">
+      <scroll-view scroll-x class="scrollview" enable-flex>
+        <block wx:for="{{topicList}}">
+          <view class="bottom-item">
+            <image src="{{item.item_pic_url}}" id="image" />
+            <text class="text4">{{item.title}}</text>
+            <text class="text5">{{item.price_info}}元起 </text>
+            <text class="text6">{{item.subtitle}}</text>
+          </view>
+        </block>
+      </scroll-view>
+    </navigator>
+  </view>
+  <block wx:for="{{categoryList}}">
+    <view class="context"><text>{{item.name}}</text></view>
+    <van-grid column-num="2" border="{{ false }}" class="nav">
+      <van-grid-item use-slot wx:for="{{ item.goodsList }}" data-id="{{item.id}}" bind:tap="getget">
+        <image src="{{item.list_pic_url}}" id="imagesss" />
+        <view class="l">
+          <text class="box-text">{{item.name}}</text>
+          <text class="box-text1">￥{{item.retail_price}}</text>
+        </view>
+      </van-grid-item>
+    </van-grid>
+  </block>
+</view>

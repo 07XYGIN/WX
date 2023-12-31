@@ -1,0 +1,21 @@
+.text1{
+    display: block;
+    width: 300rpx;
+    font-size: 37rpx;
+    color: #fff;
+    position: relative;
+    top: -460rpx;
+    left: 290rpx;
+    border-bottom: 4rpx solid #fff ;
+}
+.text0{
+    background: #fff;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 41rpx 31rpx;
+    font-size: 30rpx;
+    color: #666;
+    line-height: 41.5rpx;
+    text-align: center;
+}

@@ -1,0 +1,79 @@
+.container{
+    background: #f4f4f4;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+}
+.box{
+    width: 100%;
+    height: 280rpx;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30rpx;
+    background: #333;
+}
+.box .img{
+    height: 148rpx;
+    width: 148rpx;
+    border-radius: 50%;
+    border: 4rpx solid #fff;
+}
+.box .login{
+    flex: 1;
+    height: 85rpx;
+    margin-left: 30rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box .login text{
+    height: 45rpx;
+    line-height: 45rpx;
+    color: #fff;
+    font-size: 37rpx;
+}
+.user{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #fff
+}
+.user .index{
+    float: left;
+    width: 33.33333%;
+    height: 187rpx;
+    border-right: 1px solid rgba(0,0,0,.15);
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    text-align: center;
+}
+.flex{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flex .text{
+    display: block;
+    height: 24rpx;
+    width: 100%;
+    font-size: 24rpx;
+    color: #333;
+}
+.login #ipt{
+    height: 45rpx;
+    line-height: 45rpx;
+    color: #fff;
+    font-size: 37.5rpx;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+.btn{
+    background-color: #333;
+    color: #f4f4f4;
+    position: absolute;
+}

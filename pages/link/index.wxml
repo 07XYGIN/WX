@@ -1,0 +1,37 @@
+<!--pages/link/index.wxml-->
+<view class="container">
+    <view class="header">
+        <view class="ipt">
+        <input type="text" placeholder="520元礼包抢先领" class="in"/>
+            <image role="img"
+             mode="" 
+             class="icon" 
+             />
+        </view>
+        <view 
+        class="text" bindtap="getCurrentPages">取消</view>
+    </view>
+    <view class="box">
+        <view class="box-content"> 
+            <view class="a">
+                <text class="text">历史记录</text>
+                <image src="http://nos.netease.com/mailpub/hxm/yanxuan-wap/p/20150730/style/img/icon-normal/del1-93f0a4add4.png" mode="" 
+                class="i"
+                bindtap="del"/>
+            </view>
+            <view class="history-1">
+                    <text class="text">{{HistoryList}}</text>
+            </view>
+        </view>
+        <view class="box-content"> 
+            <view class="a">
+                <text class="text">热门搜索</text>
+            </view>
+            <view class="t">
+                <block wx:for="{{hotKeywordList}}" wx:key="item.is_hot">
+                    <view class="item" bind:tap="edit" data-id="{{item}}" >{{item.keyword}}</view>
+                </block>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,79 @@
+.text{
+    width: 100%;
+    height: auto;
+    padding-left: 30rpx;
+    background: #fff;
+    margin-top: 20rpx;
+}
+.text .icon{
+    height: 93rpx;
+    line-height: 93rpx;
+    width: 720rpx;
+    padding-right: 30rpx;
+    border-bottom: 1px solid #d9d9d9;
+}
+.text .t{
+    display: block;
+    float: left;
+    width: 50%;
+    font-size: 29rpx;
+    color: #333;
+}
+.text .img{
+    display: block;
+    float: right;
+    margin-top: 30rpx;
+    width: 33rpx;
+    height: 33rpx;
+}
+.text .text-context .t1{
+    height: 127rpx;
+    width: 100%;
+    padding: 33rpx 0 27rpx 0;
+    position: relative;
+    top: 41rpx;
+}
+.text .text-context .t2{
+    display: block;
+    float: right;
+    width: auto;
+    height: 67rpx;
+    line-height: 67rpx;
+    color: #7f7f7f;
+    font-size: 25rpx;
+    margin-right: 30rpx;
+    position: relative;
+    top: -129rpx;
+}
+.footer{
+    position: relative;
+    width: 690rpx;
+    height: 96rpx;
+    margin-bottom: 32rpx;
+    margin-top: 30rpx;
+}
+.footer .txt{
+    display: inline-block;
+    position: absolute;
+    background: #f4f4f4;
+    top: 59rpx;
+    left: 200rpx;
+    width: 290rpx;
+    height: 45rpx;
+    line-height: 45rpx;
+    font-size: 30rpx;
+    color: #999;
+    text-align: center;
+    margin: 20rpx 0 0 0;
+}
+.text .images{
+    width: 690rpx;
+    height: 397rpx;
+    padding: 24rpx 24rpx 30rpx 24rpx;
+    background: #fff;
+    margin-bottom: 30rpx;
+}
+.text .images image{
+    height: 278rpx;
+    width: 642rpx;
+}

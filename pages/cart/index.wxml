@@ -1,0 +1,31 @@
+<view class="ccontainer">
+    <view class="text">
+        <view class="item">30天无忧退货</view>
+        <view class="item">48小时快速退款</view>
+        <view class="item">满88元免邮费</view>
+    </view>
+    <view class="list">
+        <view class="list-item">
+            <view class="name">
+                <view class="index">
+                    <block wx:for="{{List}}" wx:key="{{item.id}}">
+                        <van-checkbox-group value="{{ result }}" bind:change="onChange" >
+                            <van-checkbox name="{{item.product_id}}">
+                                <view class="boxx">
+                                    <image src="{{item.list_pic_url}}" mode="" class="img" />
+                                    <text class="context1">{{item.goods_name}}</text>
+                                    <text class="context2">X{{item.number}}</text>
+                                    <text class="context3">￥{{item.market_price}}</text>
+                                </view>
+                            </van-checkbox>
+                        </van-checkbox-group>
+                    </block>
+                </view>
+                <view class="boxdel">
+                    <view class="del" bind:tap="del">删除</view>
+                <van-submit-bar price="{{ goodsAmount*100 }}" button-text="下单" bind:tap="onSubmit" />
+            </view>
+            </view>
+        </view>
+    </view>
+</view>

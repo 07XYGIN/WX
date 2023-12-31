@@ -1,0 +1,76 @@
+<view class="container">
+    <!-- 在wxml文件中 -->
+    <view class="box">
+        <image src="{{img}}" mode="" class="img" />
+        <view bind:tap="login" class="login">
+        <button class="btn" bind:tap="getimg">{{nickName}}</button>
+        </view>
+    </view>
+    <view class="user">
+        <view class="index">
+            <navigator url="" class="flex">
+                <text class="text">我的订单</text>
+            </navigator>
+        </view>
+        <view class="index">
+            <navigator url="" class="flex">
+                <text></text>
+                <text class="text">优惠卷</text>
+            </navigator>
+        </view>
+        <view class="index">
+            <navigator url="" class="flex">
+                <text></text>
+                <text class="text">礼品卡</text>
+            </navigator>
+        </view>
+        <view class="index">
+            <navigator url="" class="flex">
+                <text></text>
+                <text class="text">我的收藏</text>
+            </navigator>
+        </view>
+        <view class="index">
+            <navigator url="" class="flex">
+                <text></text>
+                <text class="text">我的足迹</text>
+            </navigator>
+        </view>
+        <view class="index">
+            <navigator url="" class="flex">
+                <text></text>
+                <text class="text">会员福利</text>
+            </navigator>
+        </view>
+        <view class="index">
+            <navigator url="" class="flex">
+                <text></text>
+                <text class="text">地址管理</text>
+            </navigator>
+        </view>
+        <view class="index">
+            <navigator url="" class="flex">
+                <text></text>
+                <text class="text">账号安全</text>
+            </navigator>
+        </view>
+        <view class="index">
+            <navigator url="" class="flex">
+                <text></text>
+                <text class="text">联系客服</text>
+            </navigator>
+        </view>
+        <view class="index">
+            <navigator url="" class="flex">
+                <text></text>
+                <text class="text">帮助中心</text>
+            </navigator>
+        </view>
+        <view class="index">
+            <navigator url="" class="flex">
+                <text></text>
+                <text class="text">意见反馈</text>
+            </navigator>
+        </view>
+    </view>
+</view>

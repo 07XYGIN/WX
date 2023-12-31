@@ -1,0 +1,113 @@
+/* pages/link/index.wxss */
+.header {
+    position: fixed;
+    top: 0;
+    width: 750rpx;
+    height: 91rpx;
+    display: flex;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    padding: 0 31rpx;
+    font-size: 29rpx;
+    color: #333;
+}
+
+.ipt {
+    position: relative;
+    margin-top: 16rpx;
+    float: left;
+    width: 0;
+    flex: 1;
+    height: 60rpx;
+    line-height: 60rpx;
+    padding: 0 20rpx;
+    background: #f4f4f4;
+}
+
+.header .icon {
+    position: absolute;
+    background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/search2-2fb94833aa.png) center no-repeat;
+    background-size: 100%;
+    width: 28rpx;
+    height: 28rpx;
+    top: 20rpx;
+    left: 10rpx;
+}
+.header .text {
+    color: #666;
+    padding-left: 10rpx;
+    line-height: 10rpx;
+}
+.header .in{
+    margin-left: 40rpx;
+    margin-top:10rpx ;
+}
+.header .text{
+    margin-top: 24rpx;
+    margin-left: 31rpx;
+    margin-right: 6rpx;
+    width: 66rpx;
+    height: 43rpx;
+    line-height: 43rpx;
+    float: right;
+}
+.box{
+    height: auto;
+    overflow: hidden;
+    margin-top: 91rpx;
+}
+.box .box-content{
+    background: #fff;
+    width: 750rpx;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20rpx;
+}
+.box .box-content .a{
+    padding: 0 31rpx;
+    height: 93rpx;
+    line-height: 93rpx;
+    width: 100%;
+    color: #999;
+    font-size: 29rpx;
+}
+.box .box-content .i{
+    background: url(http://nos.netease.com/mailpub/hxm/yanxuan-wap/p/20150730/style/img/icon-normal/del1-93f0a4add4.png) no-repeat cover;
+    margin-top: 19rpx;
+    float: right;
+    display: block;
+    margin-left: 511rpx;
+    height: 55rpx;
+    width: 55rpx;
+    overflow: hidden;
+}
+.box-content .t{
+    padding-left: 31rpx;
+}
+.box-content .t .item:first-child{
+    color: #b4282d;
+    border: 1px solid #b4282d;
+}
+.box-content .t .item{
+    display: inline-block;
+    width: auto;
+    height: 48rpx;
+    line-height: 48rpx;
+    padding: 0 15rpx;
+    border: 1px solid #999;
+    margin: 0 31rpx 31rpx 0;
+    font-size: 24rpx;
+    color: #333;
+}
+.box-content .history-1 .text{
+    display: inline-block;
+    width: auto;
+    height: 48rpx;
+    line-height: 48rpx;
+    padding: 0 15rpx;
+    border: 1px solid #999;
+    margin: 0 31rpx 31rpx 0;
+    font-size: 24rpx;
+    color: #333;
+    margin-left: 30rpx;
+}

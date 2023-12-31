@@ -1,0 +1,26 @@
+<view class="container">
+    <block wx:for="{{imgList}}">
+        <image src="{{item}}"></image>
+    </block>
+    <view class="text">
+        <view class="icon">
+            <text class="t">精选留言</text>
+            <image src="http://nos.netease.com/mailpub/hxm/yanxuan-wap/p/20150730/style/img/icon-normal/comment-add-2aca147c3f.png" mode="" class="img" />
+        </view>
+        <view class="text-context">
+            <block wx:for="{{text}}" wx:key="{{item.type_id}}" class="box">
+                <view class="t1">{{item.content}}</view>
+                <view class="t2">{{item.add_time}}</view>
+            </block>
+        </view>
+        <view class="footer">
+        <view class="txt">专题推荐</view>
+        </view>
+        <view class="images">
+            <block wx:for="{{im}}" wx:key="{{item.type_id}}">
+                <image src="{{item.scene_pic_url}}" mode=""/>
+                <view class="title">{{item.title}}</view>
+            </block>
+        </view>
+    </view>
+</view>

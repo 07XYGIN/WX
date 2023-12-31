@@ -1,0 +1,65 @@
+
+<swiper class="swiper" circular autoplay indicator-dots>
+    <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+            <view class="swiper-item">
+                <image src="{{item.img_url}}" mode="" />
+            </view>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="service-policy">
+        <view class="text">30天无忧退货</view>
+        <view class="text">48小时快速退款</view>
+        <view class="text">满88元免邮费</view>
+</view>
+<view class="main">
+    <view class="t">
+        <block>
+            <text class="text">{{info.name}}</text>
+            <text class="text1">{{info.goods_brief}}</text>
+            <text class="text2">￥{{info.retail_price}}</text>
+        </block>
+    </view>
+</view>
+<view class="section-nav section-attr" bindtap="switchAttrPop">
+    <view class="t">请选择规格数量</view>
+    <image class="i" src="../../static/images/address_right.png" background-size="cover"></image>
+  </view>
+  <van-popup show="{{ show }}"  position="bottom" bind:close="onClose"custom-style="height: 40%;"bind:close="onClose">
+  <view class="text3">
+  <text class="text2">价格${{info.retail_price}}</text>
+  <text class="text4">已选择 : 请选择规格数量</text>
+  <van-goods-action>
+  <van-goods-action-icon 
+  icon="chat-o" 
+  text="客服" 
+  bind:click="onClickIcon" />
+  <van-goods-action-icon 
+  icon="cart-o" 
+  text="购物车"
+  bind:tap="car" />
+  <van-goods-action-button
+    text="加入购物车"
+    type="warning"
+    bind:tap="onClickButton"
+  />
+  <van-goods-action-button 
+  text="立即购买" 
+  bind:tap="mai"
+  />
+  <van-stepper value="{{ 1 }}" bind:change="onChange"  class="b" />
+</van-goods-action>
+  </view>
+  </van-popup>
+  <view class="cs">
+  <block wx:for="{{list}}" >
+    <view class="z" >
+        <text class="left">{{item.name}}</text>
+        <text class="right">{{item.value}}</text>
+    </view>
+  </block>
+  <view class="geti" >
+    <rich-text nodes="{{text}}" class="imagess" style="font-size:14px;" space="emsp"></rich-text>
+  </view> 
+  </view>

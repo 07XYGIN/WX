@@ -1,0 +1,9 @@
+<view class="container">
+    <view>
+        <block >
+            <image src="{{list.list_pic_url}}" mode=""/>
+            <text class="text1">{{list.name}}</text>
+            <view class="text0">{{list.simple_desc}}</view>
+        </block>
+    </view>
+</view>

@@ -1,0 +1,89 @@
+.container{
+    background: #f4f4f4;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+.text{
+    width: 750rpx;
+    height: 73rpx;
+    background: #f4f4f4;
+    padding: 0 31rpx;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.text .item{
+    background: url(http://nos.netease.com/mailpub/hxm/yanxuan-wap/p/20150730/style/img/icon-normal/servicePolicyRed-518d32d74b.png) 0 center no-repeat;
+    background-size: 10rpx;
+    padding-left: 15rpx;
+    display: flex;
+    align-items: center;
+    font-size: 25rpx;
+    color: #666;
+}
+.list{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 120rpx;
+}
+.list .list-item{
+    height: auto;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 18rpx;
+}
+.list .list-item .name{
+    font-family: PingFangSC-Light,helvetica,'Heiti SC';
+    font-size: 29rpx;
+    color: #333;
+}
+.boxx{
+    float: left;
+    height: 164rpx;
+    width: 672rpx;
+    border-bottom: 1px solid #f4f4f4;
+    position: relative;
+}
+.img{
+    float: left;
+    height: 125rpx;
+    width: 125rpx;
+    background: #f4f4f4;
+    margin: 19rpx 18rpx 19.5rpx 0;
+}
+.context1{
+    margin: 8rpx 0;
+    height: 28rpx;
+    font-size: 25rpx;
+    color: #333;
+}
+.context2{
+    height: 28rpx;
+    line-height: 28rpx;
+    float: right;
+    margin: 30rpx 0;
+}
+.context3{
+    float: left;
+    position: absolute;
+    top: 50rpx;
+    left: 139rpx;
+}
+.boxdel{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100rpx;
+    width: 100%;
+    background: #fff;
+    display: flex;
+}
+.del{
+    z-index: 9999;
+    position: absolute;
+    top: 30rpx;
+    left: 80rpx;
+}

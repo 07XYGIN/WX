@@ -1,0 +1,16 @@
+<view class="container">
+    <view>
+        <navigator url="../brandDetail/index" class="nav">
+            <block wx:for="{{Topic}}">
+                <image src="{{item.scene_pic_url}}" mode="" />
+                <view class="text0">{{item.title}} </view>
+                <view class="text1">{{item.subtitle}} </view>
+                <view class="text2">{{item.price_info}}元起</view>
+            </block>
+        </navigator>
+        <view class="next">
+            <button bind:tap="tugo" disabled="{{prevButtonDisabled}}">上一页</button>
+            <button bind:tap="next">下一页</button>
+        </view>
+    </view>
+</view>
